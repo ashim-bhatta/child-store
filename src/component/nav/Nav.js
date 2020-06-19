@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './nav.css'
 import {Link} from 'react-router-dom'
 import { FaOpencart } from 'react-icons/fa';
 import { MdAccountCircle } from 'react-icons/md';
-
+import {ClothesContex} from '../../contex/ClothesContex'
 const Nav = ( ) => {
     const [ isNavOpen, setIsNavOpen ] = useState(false)
     const [ menuItem ] = useState([ 'home', 'about', 'shop', 'contact'])
-
+    const [ clothes, noOfClothesInCart ] = useContext(ClothesContex)
+    console.log(noOfClothesInCart);
+    
     return(
         <div>
             <nav>
@@ -31,7 +33,7 @@ const Nav = ( ) => {
                             {
                                 menuItem.map((item) => {
                                     return(
-                                        <li className='menu-item'>
+                                        <li className='menu-item' key={item}>
                                             <Link to={item}>
                                                 {item}
                                             </Link>
@@ -49,7 +51,7 @@ const Nav = ( ) => {
                 <div className='cart'>
                         <FaOpencart className='icon-cart' />
                         <span>
-                            0
+                            {noOfClothesInCart}
                         </span>
                 </div>
                 <div className='account'>

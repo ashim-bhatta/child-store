@@ -145,3 +145,9 @@ nav{
     font-size: 22px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+    nav{
+        width: 80px;
+    }
+  }

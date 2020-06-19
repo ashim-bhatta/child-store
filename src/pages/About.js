@@ -2,7 +2,12 @@ import React from 'react'
 import Nav from '../component/nav/Nav'
 const About = ( ) => {
     return(
-        <Nav />
+        <>
+            <Nav />
+            <h1>
+                alsdnkjashdddddd
+            </h1>
+        </>
     )
 }
 

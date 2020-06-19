@@ -7,14 +7,11 @@ function App() {
   return (
     <BrowserRouter>
         <Switch>
-            <Home />
-			<Route  path='/' exact>
-				<Home />
-			</Route>
-			<Route  path='/about' exact>
-				<About />
-			</Route>
-        </Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/home' component={Home} />
+              <Route exact path='/about' component={About} />
+            <Route  component={() =><h1> Page Not Found!! : - ()</h1>} />
+          </Switch>
     </BrowserRouter>
   );
 }
