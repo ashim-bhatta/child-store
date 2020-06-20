@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Nav from '../component/nav/Nav'
+import Newsletter from '../component/newsletter/Newsletter'
+import Footer from '../component/footer/Footer'
+
 import './home.css'
 const Home = ( ) => {
     const [ collections ] = useState([
@@ -50,6 +53,8 @@ const Home = ( ) => {
                     }
                 </div>
             </div>
+            <Newsletter />
+            <Footer />
        </div>
     )
 }

@@ -4,7 +4,7 @@ nav{
     top: 0;
     bottom: 0;
     width: 100px;
-    z-index: 10;
+    z-index: 101;
 }
 
 .logo{
@@ -28,7 +28,7 @@ nav{
     left: 20px;
     top: 20px;
     cursor: pointer;
-    z-index: 777;
+    z-index: 74477;
 }
 .line{
     width: 40px;
@@ -70,6 +70,7 @@ nav{
     transition:  all 600ms;
     box-shadow: 1px 1px 20px rgba(184, 178, 178, 0.856);
     color: rgba(54, 53, 53, 0.897);
+    z-index: 100;
 }
 .nav-menu.open{
     left: 0%;
@@ -149,5 +150,14 @@ nav{
 @media only screen and (max-width: 500px) {
     nav{
         width: 80px;
+        
+    }
+    .logo{
+        left: -35%;
+    }
+    .logo h2{ 
+        font-size: 2.7rem;
+        font-weight: 900;
+        letter-spacing: 3px;
     }
   }

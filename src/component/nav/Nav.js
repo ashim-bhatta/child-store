@@ -20,7 +20,7 @@ const Nav = ( ) => {
                 </div>
                 <div className='logo'>
                     <h2>
-                        milk
+                        milkk
                     </h2>
                 </div>
             </nav>
